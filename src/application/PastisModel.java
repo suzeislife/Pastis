@@ -1,95 +1,104 @@
 package application;
 
-public class PastisModel implements IPastisModel{
+public class PastisModel implements IPastisModel {
 
+	private static final int LENGTH_PASSWORD = 12;
+	
+	private String password;
+	private int lengthPass;
+	private boolean ucLetter;
+	private boolean lcLetter;
+	private boolean digits;
+	private boolean symbole;
+	private boolean pronounceable;
+	private boolean ambigus;
+
+	public PastisModel(){
+		this.password = null;
+		this.lengthPass = LENGTH_PASSWORD;
+		this.ucLetter = false;
+		this.lcLetter = false;
+		this.digits = false;
+		this.symbole = false;
+		this.pronounceable = false;
+		this.ambigus = false;
+	}
+	
 	@Override
 	public int getLength() {
-		// TODO Auto-generated method stub
-		return 0;
+		return lengthPass;
 	}
 
 	@Override
 	public void setLength(int length) {
-		// TODO Auto-generated method stub
-		
+		lengthPass = length;
 	}
 
 	@Override
 	public boolean hasUcLetters() {
-		// TODO Auto-generated method stub
-		return false;
+		return ucLetter;
 	}
 
 	@Override
 	public void setUcLetters(boolean ucLetters) {
-		// TODO Auto-generated method stub
-		
+		ucLetter = ucLetters;
 	}
 
 	@Override
 	public boolean hasLcLetters() {
-		// TODO Auto-generated method stub
-		return false;
+		return lcLetter;
 	}
 
 	@Override
 	public void setLcLetters(boolean lcLetters) {
-		// TODO Auto-generated method stub
-		
+		lcLetter = lcLetters;
 	}
 
 	@Override
 	public boolean hasDigits() {
-		// TODO Auto-generated method stub
-		return false;
+		return digits;
 	}
 
 	@Override
 	public void setDigits(boolean digits) {
-		// TODO Auto-generated method stub
-		
+		this.digits = digits;
 	}
 
 	@Override
 	public boolean hasSymbols() {
-		// TODO Auto-generated method stub
-		return false;
+		return symbole;
 	}
 
 	@Override
 	public void setSymbols(boolean symbols) {
-		// TODO Auto-generated method stub
-		
+		symbole = symbols;
 	}
 
 	@Override
 	public boolean isPronounceable() {
-		// TODO Auto-generated method stub
-		return false;
+		return pronounceable;
 	}
 
 	@Override
 	public void setPronounceable(boolean pronounceable) {
-		// TODO Auto-generated method stub
-		
+		this.pronounceable = pronounceable;
 	}
 
 	@Override
 	public boolean isUnambiguous() {
-		// TODO Auto-generated method stub
-		return false;
+		return ambigus;
 	}
 
 	@Override
 	public void setUnambiguous(boolean unambiguous) {
-		// TODO Auto-generated method stub
-		
+		ambigus = unambiguous;
 	}
 
 	@Override
 	public String generateNewPassword() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		
+		return password;
 	}
 
 }
