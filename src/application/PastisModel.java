@@ -96,8 +96,6 @@ public class PastisModel implements IPastisModel {
 
 	@Override
 	public String generateNewPassword() {
-		
-		
 		return password;
 	}
 
